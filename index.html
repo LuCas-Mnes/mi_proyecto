@@ -5,63 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <link rel="icon" href="./imagenes/headset-f.svg">
+    <title>ROCKARGENTO</title>
 
-    <!-- Vinculacion de nuestra hoja de estilos CSS -->
+    <!-- Vinculamos la "Magia"  CSS -->
     <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Vinculacion de la libreria de iconos Jam Icons v2 - Iconos Tipograficos -->
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 </head>
 
 <body>
-    <header>
-        <img src="imagenes/logotipo-negro.svg" alt="Logotipo" width="100" height="32">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pagina-2.html">Pagina 2</a></li>
-                <li><a href="pagina-3.html">Pagina 3</a></li>
+    <header class="header">
+        <img src="imagenes/Logo_rockargento.jpg" alt="Logotipo" width="150" height="150">
+        <nav class="nav">
+            <ul class="nav__lista">
+                <!-- display: flex -->
+                <li class="nav__item">
+                    <a class="nav__enlace" href="index.html">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__enlace" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__enlace" href="contacto.html">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-      
-        <section>
-            <div>
-                <p>Youtube Premium</p>
-                <h1>Obten 3 meses de Premium Gratis</h1>
-                <p>Todo el contenido que te puedas imaginar a un solo click </p>
-                <a href="">Obtener 3 meses gratis</a>
-                <p>¡No dudes!.</p>
+    <main class="main">
+        <!-- Dinamico porque aca vamos a ir generando o colocando las secciones de contenido de esta pagina -->
+        <section class="inicio1">
+            <div class="inicio1__textos">
+                <p class="inicio1__subtitulo">RockArgento</p>
+                <h1 class="inicio1__titulo">Primer Plataforma de Musica de Rock Argentina </h1>
+                <p class="inicio1__eslogan">Encontra toda la musica de nuestro Rock Argentino, los mejores artistas, las bandas mas votadas por los usuarios, bandas nuevas, y mucho más</p>
+                <a class="inicio1__boton" href="">¡Suscribite ya!</a>
+                <p class="inicio1__terminos">Plataforma de Contenido Digital.</p>
             </div>
+
+        </section>
+
+        <section class="inicio2">
+
             <div>
-                <img src="imagenes/pexels-freestocksorg-34407.jpg" alt="Ilustracion de la primera seccion" width="300"
-                    height="300">
+                <h2 class="inicio2__titulo">Ranking de las Mejores Bandas de La Historia Argentina</h2>
+                <p class="inicio2__parrafo">¡Ingresa y vota!.</p>
+                <a class="inicio2__boton" href="">¡VOTAR!</a>
+                <span class="inicio2__absolute">Hot Sale 🧨</span>
             </div>
         </section>
 
-        <section>
-            <div>
-                <h2>¿Tienes ganas de escuchar algo?</h2>
-                <p>Suscribite a un canal y comenza a disfrutar!</p>
-                <a href="">Abrir reproductor web o descarga la version de escritorio</a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Titulo para la 3 Seccion de contenido</h2>
-        </section>
+        <!-- https://api.whatsapp.com/send?phone=XXXXXXXXXXX -->
+        <a href="https://wa.me/+543757418104" class="position-fixed" target="_blank">
+            <span class="jam jam-whatsapp"></span>
+        </a>
 
     </main>
 
-    <footer>
-        <img src="imagenes/logotipo-negro.svg" alt="Logotipo" width="100" height="32">
-        <ul>
-            <li><a href="">Enlace 1</a></li>
-            <li><a href="">Enlace 2</a></li>
-            <li><a href="">Enlace 3</a></li>
-        </ul>
-        <p>Argentina 2022 - Youtube </p>
-        <p>Consulta por el plan familiar.</p>
+    <footer class="footer">
+        <div class="footer__flex">
+            <img src="imagenes/Logo_rockargento.jpg" alt="Logotipo" width="150" height="150">
+            <ul class="footer__lista">
+                <li class="footer__item">
+                    <a class="footer__enlace" href="https://twitter.com/lucasruiz1612" class="footer_enlace"><i class="fa-brands fa-twitter twitter"></i>Twitter</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__enlace" href="https://www.linkedin.com/in/lucas-manuel-ruiz-a2712489/"class="footer_enlace"><i class="fa-brands fa-linkedin linkedin"></i>Linkedin</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__enlace" href="https://www.facebook.com/ojosdecieloiguazu/" class="footer_enlace"><i class="fa-brands fa-facebook facebook"></i>Facebook</a>
+                </li>
+            </ul>
+        </div>
+        <p>Argentina © 2022 RockArgento </p>
     </footer>
 </body>
 
